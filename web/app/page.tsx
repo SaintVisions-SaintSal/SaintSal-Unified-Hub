@@ -1,3 +1,4 @@
+// SaintSal™ Unified Hub - Live Heartbeat v1.0.1
 "use client";
 import { useState, useEffect, useMemo } from "react";
 import { supabase } from "@/lib/supabase";
