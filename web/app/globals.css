@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #F59E0B;
+  --gold-dark: #D97706;
+  --bg: #0C0C0F;
+  --surface: #111118;
+  --surface-dark: #090910;
+  --border: #1E1E2A;
+  --border-subtle: #141420;
+  --text: #E8E6E1;
+  --text-muted: #999;
+  --text-dim: #575762;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; overflow: hidden; }
+body { font-family: 'Geist', sans-serif; background: var(--bg); color: var(--text); }
+
+::-webkit-scrollbar { width: 3px; height: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #222228; border-radius: 3px; }
+
+.cursor-blink::after {
+  content: "▊";
+  animation: blink .9s step-end infinite;
+  color: var(--gold);
+  font-size: .8em;
+  margin-left: 1px;
+}
+
+@layer utilities {
+  .glow-gold { box-shadow: 0 0 18px rgba(245, 158, 11, 0.15); }
+  .glass { background: rgba(9,9,16,.8); backdrop-filter: blur(12px); }
+  .gradient-fade { background: linear-gradient(to top, var(--surface-dark) 65%, transparent); }
+}
+
+pre { white-space: pre-wrap; word-break: break-word; }

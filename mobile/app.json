@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "SaintSal™ Unified Hub",
+    "slug": "saintsal-unified-hub",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "saintsal-unified-hub",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0C0C0F",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0C0C0F"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.saintvision.unifiedhub",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "SAL Builder can scan and analyze images for AI processing.",
+        "NSMicrophoneUsageDescription": "SAL Voice AI needs microphone access for real-time voice conversations.",
+        "NSPhotoLibraryUsageDescription": "Upload images to SAL Builder for AI analysis and creation.",
+        "UIBackgroundModes": ["audio"]
+      },
+      "config": { "usesNonExemptEncryption": false }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#0C0C0F"
+      },
+      "package": "com.saintvision.unifiedhub",
+      "versionCode": 1,
+      "permissions": ["android.permission.INTERNET", "android.permission.CAMERA", "android.permission.RECORD_AUDIO"]
+    },
+    "web": { "favicon": "./assets/images/favicon.png" },
+    "plugins": [
+      "expo-router",
+      "expo-splash-screen",
+      ["expo-splash-screen", { "image": "./assets/splash/splash.png", "backgroundColor": "#0C0C0F" }]
+    ],
+    "experiments": { "typedRoutes": true },
+    "extra": {
+      "router": { "origin": false },
+      "stitchProjectId": "8321643441753373833",
+      "stitchUrl": "https://stitch.withgoogle.com/projects/8321643441753373833",
+      "stitchToken": "AQ.Ab8RN6LAVG0VEc7C3xcz0fLbKbpT0dQIFvzXVh1VyWNiDDWWBg",
+      "webAppUrl": "https://saintsallabs.com"
+    },
+    "owner": "saint-vision-technologies-llc"
+  }
+}
