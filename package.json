@@ -1,0 +1,12 @@
+{
+  "name": "saintsal-unified-hub-root",
+  "private": true,
+  "workspaces": [
+    "web",
+    "mobile"
+  ],
+  "scripts": {
+    "build": "cd web && npm run build",
+    "install": "cd web && npm install"
+  }
+}
